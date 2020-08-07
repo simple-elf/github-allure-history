@@ -1,8 +1,5 @@
 {
-  "name" : "GitHub Actions",
-  "type" : "github",
-  "reportName" : "Allure Report on Github Pages",
-  "buildName" : "GitHub Actions #__",
+  "buildName" : "GitHub Actions #111",
   "buildOrder" : "2",
   "reportUrl" : "https://simple-elf.github.io/github-allure-history/1/",
   "buildUrl" : "https://github.com/simple-elf/github-allure-history/actions/runs/111"
