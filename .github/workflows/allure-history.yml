@@ -78,7 +78,7 @@ jobs:
       #    path: allure-report
 
 
-      - run: mv $(pwd)/allure-report $(pwd)/gh-pages/1
+      - run: cp -r $(pwd)/allure-report/. $(pwd)/gh-pages/1
 
       - name: Deploy report to Github Pages
         if: always()
