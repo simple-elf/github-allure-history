@@ -42,18 +42,20 @@ jobs:
         run: ./gradlew test
         continue-on-error: true
 
+      #mkdir -p gh-pages   ##???
       - name: Get Allure history
         uses: actions/checkout@v2
         with:
           ref: gh-pages
           path: gh-pages
+      - run: ls gh-pages
 
       - name: Keep Allure history
-        run: cp -r $(pwd)/gh-pages/history/. $(pwd)/build/allure-results/history
+        run: cp -r $(pwd)/gh-pages/1/history/. $(pwd)/build/allure-results/history
         continue-on-error: true
 
-      - run: cp -r $(pwd)/executor.json $(pwd)/build/allure-results
-      - run: cp -r $(pwd)/gh-pages/. $(pwd)/allure-report/1
+      - run: mv $(pwd)/executor.json $(pwd)/build/allure-results
+      #- run: cp -r $(pwd)/gh-pages/. $(pwd)/allure-report/1
 
       #- name: Generate Allure report
       #  if: always()
@@ -61,8 +63,7 @@ jobs:
       #  continue-on-error: true
 
       # for next action
-      - run: cp -r $(pwd)/build/allure-results/. $(pwd)/allure-results
-
+      - run: mv $(pwd)/build/allure-results $(pwd)/allure-results
       - name: Generate Allure report
         if: always()
         uses: afiore/action-allure-report@v0.1.0
@@ -70,10 +71,14 @@ jobs:
         #  results-dir: build/allure-results
         #  report-dir: build/allure-report
 
+
       #- uses: actions/upload-artifact@master
       #  with:
       #    name: allure-report
       #    path: allure-report
+
+
+      - run: mv $(pwd)/allure-report $(pwd)/gh-pages/1
 
       - name: Deploy report to Github Pages
         if: always()
@@ -81,4 +86,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-report
+          PUBLISH_DIR: gh-pages

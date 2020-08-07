@@ -3,8 +3,7 @@
   "type" : "github",
   "reportName" : "Allure Report on Github Pages",
   "buildName" : "GitHub Actions #__",
-  "url" : "https://simple-elf.github.io/github-allure-history/",
   "buildOrder" : "2",
-  "reportUrl" : "https://simple-elf.github.io/github-allure-history/",
-  "buildUrl" : "https://github.com/actions/runs/11"
+  "reportUrl" : "https://simple-elf.github.io/github-allure-history/1/",
+  "buildUrl" : "https://github.com/simple-elf/github-allure-history/actions/runs/111"
 }
