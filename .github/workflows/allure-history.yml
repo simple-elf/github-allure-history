@@ -52,11 +52,11 @@ jobs:
         run: |
           REPOSITORY_OWNER_SLASH_NAME="${{ github.repository }}"
           REPOSITORY_NAME=${REPOSITORY_OWNER_SLASH_NAME##*/}
-          GITHUB_PAGES_WEBSITE_URL="https://${{ github.repository_owner }}.github.io/${REPOSITORY_NAME}"
+          GITHUB_PAGES_WEBSITE_URL="https://${{ github.repository_owner }}.github.io/${{REPOSITORY_NAME}}"
           echo '{"name":"GitHub Actions","type":"github","reportName":"Allure Report with history",' > executor.json
-          echo '"url":"$GITHUB_PAGES_WEBSITE_URL",' >> executor.json
+          echo '"url":"${{GITHUB_PAGES_WEBSITE_URL}}",' >> executor.json
           echo '"buildName":"GitHub Actions Run #${{ github.run_id }}","buildOrder":"${{ github.run_number }}",' >> executor.json
-          echo '"reportUrl":"$GITHUB_PAGES_WEBSITE_URL/${{ github.run_number }}",' >> executor.json
+          echo '"reportUrl":"${{GITHUB_PAGES_WEBSITE_URL}}/${{ github.run_number }}",' >> executor.json
           echo '"buildUrl":"https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' >> executor.json
           cat executor.json
 
