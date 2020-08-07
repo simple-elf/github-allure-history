@@ -31,8 +31,8 @@ jobs:
         with:
           java-version: 1.8
 
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
+      #- name: Make gradlew executable
+      #  run: chmod +x ./gradlew
 
       - name: Install dependencies
         run: ./gradlew compileTestJava
@@ -52,11 +52,15 @@ jobs:
         run: cp -r $(pwd)/gh-pages/history/. $(pwd)/build/allure-results/history
         continue-on-error: true
 
+      - run: cp -r $(pwd)/executor.json $(pwd)/build/allure-results
+      - run: cp -r $(pwd)/gh-pages/. $(pwd)/allure-report/1
+
       #- name: Generate Allure report
       #  if: always()
       #  run: ./gradlew allureReport
       #  continue-on-error: true
 
+      # for next action
       - run: cp -r $(pwd)/build/allure-results/. $(pwd)/allure-results
 
       - name: Generate Allure report
@@ -69,7 +73,7 @@ jobs:
       #- uses: actions/upload-artifact@master
       #  with:
       #    name: allure-report
-      #    path: target/site/allure-maven-plugin
+      #    path: allure-report
 
       - name: Deploy report to Github Pages
         if: always()
