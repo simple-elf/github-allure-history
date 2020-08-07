@@ -4,11 +4,30 @@ plugins {
     id 'io.qameta.allure' version '2.8.1'
 }
 
-group 'io.qameta.allure'
+group 'io.qameta.allure.examples'
 version '1.0'
 
-allure {
+def allureVersion = "2.13.3"
 
+allure {
+    autoconfigure = true
+    aspectjweaver = true
+    version = allureVersion
+
+    useJUnit5 {
+        version = allureVersion
+    }
+}
+
+test {
+    ignoreFailures = true
+    useJUnitPlatform {
+
+    }
+
+    systemProperty("junit.jupiter.execution.parallel.enabled", "true")
+    systemProperty("junit.jupiter.execution.parallel.config.strategy", "dynamic")
+    systemProperty("junit.jupiter.extensions.autodetection.enabled", "true")
 }
 
 repositories {
@@ -18,6 +37,7 @@ repositories {
 
 dependencies {
     compile('commons-io:commons-io:2.6')
+
     compile('io.qameta.allure:allure-java-commons:2.12.1')
     compile('org.junit.jupiter:junit-jupiter-api:5.3.0')
     compile('org.junit.jupiter:junit-jupiter-engine:5.3.0')
