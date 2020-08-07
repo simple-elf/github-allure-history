@@ -68,7 +68,7 @@ jobs:
       - run: mkdir -p allure-history
       - run: cp -r $(pwd)/gh-pages/. $(pwd)/allure-history
       - run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history
-      - run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history/1
+      - run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history/2
 
       - name: Deploy report to Github Pages
         if: always()
