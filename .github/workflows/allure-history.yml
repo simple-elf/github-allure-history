@@ -42,13 +42,12 @@ jobs:
         run: ./gradlew test
         continue-on-error: true
 
-      #mkdir -p gh-pages   ##???
+      - run: mkdir -p gh-pages
       - name: Get Allure history
         uses: actions/checkout@v2
         with:
           ref: gh-pages
           path: gh-pages
-      - run: ls gh-pages
 
       - name: Keep Allure history
         run: cp -r $(pwd)/gh-pages/1/history/. $(pwd)/build/allure-results/history
@@ -71,12 +70,10 @@ jobs:
         #  results-dir: build/allure-results
         #  report-dir: build/allure-report
 
-
       #- uses: actions/upload-artifact@master
       #  with:
       #    name: allure-report
       #    path: allure-report
-
 
       - run: cp -r $(pwd)/allure-report/. $(pwd)/gh-pages/1
 
