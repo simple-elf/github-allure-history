@@ -1,0 +1,1 @@
+.allure/allure-2.13.3/bin/allure.bat generate -c build/allure-results -o build/reports/allure-report

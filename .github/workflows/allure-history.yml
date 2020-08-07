@@ -48,6 +48,15 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
+      - name: executor.json
+        run: |
+          echo '{"name":"GitHub Actions","type":"github","reportName":"Allure Report with history",' > executor.json
+          echo '"url":"https://simple-elf.github.io/github-allure-history/",' >> executor.json
+          echo '"buildName":"GitHub Actions Run #${{ github.run_id }}","buildOrder":"2",' >> executor.json
+          echo '"reportUrl":"https://simple-elf.github.io/github-allure-history/2",' >> executor.json
+          echo '"buildUrl":"https://github.com/simple-elf/github-allure-history/actions/runs/${{ github.run_id }}"}' >> executor.json
+          cat executor.json
+
       - run: mv $(pwd)/executor.json $(pwd)/build/allure-results
       - name: Keep Allure history
         run: cp -r $(pwd)/gh-pages/history/. $(pwd)/build/allure-results/history
