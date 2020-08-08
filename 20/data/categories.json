@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <Some issue title here> but was: <another text>",
+      "children" : [ {
+        "name" : "Close new issue for authorized user",
+        "uid" : "188f54183b7bedf4",
+        "parentUid" : "760fe81b3ba66ec84ca2cefe6e5ad991",
+        "status" : "failed",
+        "time" : {
+          "start" : 1596892160356,
+          "stop" : 1596892161431,
+          "duration" : 1075
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "760fe81b3ba66ec84ca2cefe6e5ad991"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Selenium timeout: selenium unavailable now",
+      "children" : [ {
+        "name" : "Create new issue authorized user",
+        "uid" : "95a5ac2bd92030c3",
+        "parentUid" : "340e656f34185d11d723ba37ac19a21b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596892161540,
+          "stop" : 1596892162542,
+          "duration" : 1002
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Close existing pull request for authorized user",
+        "uid" : "7cef57f49ed3912f",
+        "parentUid" : "340e656f34185d11d723ba37ac19a21b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596892162416,
+          "stop" : 1596892164420,
+          "duration" : 2004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "340e656f34185d11d723ba37ac19a21b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
