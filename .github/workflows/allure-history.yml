@@ -48,6 +48,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
+      - run: mkdir -p allure-history
       - name: executor.json
         run: |
           REPOSITORY_OWNER_SLASH_NAME="${{ github.repository }}"
@@ -59,6 +60,7 @@ jobs:
           echo "\"reportUrl\":\"${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\"," >> executor.json
           echo '"buildUrl":"https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' >> executor.json
           cat executor.json
+          echo "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\">" > $(pwd)/allure-history/index.html
 
       - run: mv $(pwd)/executor.json $(pwd)/build/allure-results
       - name: Keep Allure history
@@ -72,12 +74,10 @@ jobs:
         uses: afiore/action-allure-report@v0.1.0
         continue-on-error: true
 
-      - run: mkdir -p allure-history
       - run: cp -r $(pwd)/gh-pages/. $(pwd)/allure-history
       #- run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history
       - run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history/${{ github.run_number }}
       - run: cp -r $(pwd)/allure-report/history/. $(pwd)/allure-history/history
-      - run: echo "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\">" > $(pwd)/allure-history/index.html
 
       - name: Deploy report to Github Pages
         if: always()
