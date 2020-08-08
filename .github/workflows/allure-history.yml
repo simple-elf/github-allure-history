@@ -60,7 +60,9 @@ jobs:
           echo "\"reportUrl\":\"${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\"," >> executor.json
           echo '"buildUrl":"https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' >> executor.json
           cat executor.json
-          echo "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\">" > $(pwd)/allure-history/index.html
+          echo "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=" > $(pwd)/allure-history/index.html
+          echo "${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\">" >> $(pwd)/allure-history/index.html
+          cat $(pwd)/allure-history/index.html
 
       - run: mv $(pwd)/executor.json $(pwd)/build/allure-results
       - name: Keep Allure history
