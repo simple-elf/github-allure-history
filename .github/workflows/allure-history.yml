@@ -79,7 +79,7 @@ jobs:
       #- run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history
       - run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history/${{ github.run_number }}
       - run: cp -r $(pwd)/allure-report/history/. $(pwd)/allure-history/history
-      - run: cp -r $(pwd)index.html $(pwd)/allure-history
+      - run: cp -r $(pwd)/index.html $(pwd)/allure-history
 
       - name: Deploy report to Github Pages
         if: always()
