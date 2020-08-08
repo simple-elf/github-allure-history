@@ -31,9 +31,7 @@ jobs:
         with:
           java-version: 1.8
 
-      #- name: Make gradlew executable
-      #  run: chmod +x ./gradlew
-
+      #- run: chmod +x ./gradlew
       - name: Install dependencies
         run: ./gradlew compileTestJava
 
@@ -53,7 +51,6 @@ jobs:
           REPOSITORY_OWNER_SLASH_NAME="${{ github.repository }}"
           REPOSITORY_NAME=${REPOSITORY_OWNER_SLASH_NAME##*/}
           GITHUB_PAGES_WEBSITE_URL="https://${{ github.repository_owner }}.github.io/${REPOSITORY_NAME}"
-          echo $GITHUB_PAGES_WEBSITE_URL
           echo '{"name":"GitHub Actions","type":"github","reportName":"Allure Report with history",' > executor.json
           echo "\"url\":\"${GITHUB_PAGES_WEBSITE_URL}\"," >> executor.json
           echo '"buildName":"GitHub Actions Run #${{ github.run_id }}","buildOrder":"${{ github.run_number }}",' >> executor.json
@@ -66,11 +63,6 @@ jobs:
         run: cp -r $(pwd)/gh-pages/history/. $(pwd)/build/allure-results/history
         continue-on-error: true
 
-      #- name: Generate Allure report
-      #  if: always()
-      #  run: ./gradlew allureReport
-      #  continue-on-error: true
-
       # for next action
       - run: mv $(pwd)/build/allure-results $(pwd)/allure-results
       - name: Generate Allure report
@@ -80,8 +72,10 @@ jobs:
 
       - run: mkdir -p allure-history
       - run: cp -r $(pwd)/gh-pages/. $(pwd)/allure-history
-      - run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history
+      #- run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history
       - run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history/${{ github.run_number }}
+      - run: cp -r $(pwd)/allure-report/history/. $(pwd)/allure-history/history
+      - run: echo "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\">" > $(pwd)/allure-history/index.html
 
       - name: Deploy report to Github Pages
         if: always()
