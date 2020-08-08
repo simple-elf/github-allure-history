@@ -1,0 +1,233 @@
+{
+  "uid" : "cf5ca9502bb2b6d9",
+  "name" : "Close issue via api",
+  "fullName" : "io.qameta.allure.examples.junit5.IssuesRestTest.shouldDeleteUserNote",
+  "historyId" : "2a5ce2b091ae8a6e9df48047a48e310b",
+  "time" : {
+    "start" : 1596892454697,
+    "stop" : 1596892454703,
+    "duration" : 6
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create issue with title `First Note`",
+      "time" : {
+        "start" : 1596892454703,
+        "stop" : 1596892454703,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST /repos/allure-framework/allure2/issues",
+        "time" : {
+          "start" : 1596892454703,
+          "stop" : 1596892454703,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      }, {
+        "name" : "title",
+        "value" : "First Note"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Close issue with title `First Note`",
+      "time" : {
+        "start" : 1596892454703,
+        "stop" : 1596892454703,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /repos/allure-framework/allure2/issues?text=First Note",
+        "time" : {
+          "start" : 1596892454703,
+          "stop" : 1596892454703,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "PATCH /repos/allure-framework/allure2/issues/10",
+        "time" : {
+          "start" : 1596892454703,
+          "stop" : 1596892454703,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      }, {
+        "name" : "title",
+        "value" : "First Note"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "feature",
+    "value" : "Issues"
+  }, {
+    "name" : "owner",
+    "value" : "baev"
+  }, {
+    "name" : "url",
+    "value" : "/repos/{owner}/{repo}/issues"
+  }, {
+    "name" : "layer",
+    "value" : "rest"
+  }, {
+    "name" : "jira",
+    "value" : "AE-1"
+  }, {
+    "name" : "story",
+    "value" : "Close existing issue"
+  }, {
+    "name" : "host",
+    "value" : "fv-az60"
+  }, {
+    "name" : "thread",
+    "value" : "4159@fv-az60.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.IssuesRestTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.IssuesRestTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldDeleteUserNote"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.IssuesRestTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "owner",
+    "value" : "allure-framework"
+  }, {
+    "name" : "repo",
+    "value" : "allure2"
+  }, {
+    "name" : "title",
+    "value" : "First Note"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "baev",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "6c885c53596e5d1a",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/20/#testresult/6c885c53596e5d1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596892163655,
+          "stop" : 1596892163658,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "1e0621525373e3a6",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/19/#testresult/1e0621525373e3a6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596863918256,
+          "stop" : 1596863918258,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "2fb39f96a814ee",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/18/#testresult/2fb39f96a814ee",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596863590221,
+          "stop" : 1596863590222,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "web", "regress" ]
+  },
+  "source" : "cf5ca9502bb2b6d9.json",
+  "parameterValues" : [ "allure-framework", "allure2", "First Note" ]
+}
