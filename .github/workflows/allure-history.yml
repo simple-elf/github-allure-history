@@ -3,7 +3,7 @@ name: Allure Reports with history
 on:
   push:
     branches-ignore:
-      - '!master' # Push events to branches matching allure-report
+      - '!master' # ignore gh-pages
     #paths-ignore:
     #- 'docs/**'
 
@@ -48,38 +48,15 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - run: mkdir -p allure-history
-      - name: executor.json
-        run: |
-          REPOSITORY_OWNER_SLASH_NAME="${{ github.repository }}"
-          REPOSITORY_NAME=${REPOSITORY_OWNER_SLASH_NAME##*/}
-          GITHUB_PAGES_WEBSITE_URL="https://${{ github.repository_owner }}.github.io/${REPOSITORY_NAME}"
-          echo '{"name":"GitHub Actions","type":"github","reportName":"Allure Report with history",' > executor.json
-          echo "\"url\":\"${GITHUB_PAGES_WEBSITE_URL}\"," >> executor.json
-          echo '"buildName":"GitHub Actions Run #${{ github.run_id }}","buildOrder":"${{ github.run_number }}",' >> executor.json
-          echo "\"reportUrl\":\"${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\"," >> executor.json
-          echo '"buildUrl":"https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' >> executor.json
-          cat executor.json
-          echo "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=${GITHUB_PAGES_WEBSITE_URL}/${{ github.run_number }}\">" >> index.html
-          cat index.html
-
-      - run: mv $(pwd)/executor.json $(pwd)/build/allure-results
-      - name: Keep Allure history
-        run: cp -r $(pwd)/gh-pages/history/. $(pwd)/build/allure-results/history
-        continue-on-error: true
-
-      # for next action
-      - run: mv $(pwd)/build/allure-results $(pwd)/allure-results
-      - name: Generate Allure report
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@v1
         if: always()
-        uses: afiore/action-allure-report@v0.1.0
-        continue-on-error: true
-
-      - run: cp -r $(pwd)/gh-pages/. $(pwd)/allure-history
-      #- run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history
-      - run: cp -r $(pwd)/allure-report/. $(pwd)/allure-history/${{ github.run_number }}
-      - run: cp -r $(pwd)/allure-report/history/. $(pwd)/allure-history/history
-      - run: cp -r $(pwd)/index.html $(pwd)/allure-history
+        #id: allure-report
+        with:
+          allure_results: $(pwd)/build/allure-results
+          #gh_pages: gh-pages
+          #allure_report: allure-report
+          allure_history: allure-history
 
       - name: Deploy report to Github Pages
         if: always()

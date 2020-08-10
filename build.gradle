@@ -7,7 +7,7 @@ plugins {
 group 'io.qameta.allure.examples'
 version '1.1'
 
-def allureVersion = "2.13.3"
+def allureVersion = "2.13.5"
 
 allure {
     autoconfigure = true
@@ -38,8 +38,8 @@ repositories {
 dependencies {
     compile('commons-io:commons-io:2.6')
 
-    compile('io.qameta.allure:allure-java-commons:2.13.3')
-    compile('org.junit.jupiter:junit-jupiter-api:5.3.0')
-    compile('org.junit.jupiter:junit-jupiter-engine:5.3.0')
-    compile('org.junit.jupiter:junit-jupiter-params:5.3.0')
+    compile("io.qameta.allure:allure-java-commons:$allureVersion")
+    compile("org.junit.jupiter:junit-jupiter-api:5.3.0")
+    compile("org.junit.jupiter:junit-jupiter-engine:5.3.0")
+    compile("org.junit.jupiter:junit-jupiter-params:5.3.0")
 }
