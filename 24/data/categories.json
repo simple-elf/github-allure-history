@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <new-feature> but was: <another text>",
+      "children" : [ {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "2b99de7817f74881",
+        "parentUid" : "4d9abebe0c75547f83eee2638e05a3c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597079878371,
+          "stop" : 1597079880459,
+          "duration" : 2088
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4d9abebe0c75547f83eee2638e05a3c5"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

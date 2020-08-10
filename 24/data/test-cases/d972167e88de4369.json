@@ -1,0 +1,186 @@
+{
+  "uid" : "d972167e88de4369",
+  "name" : "Create new issue with labels",
+  "fullName" : "io.qameta.allure.examples.junit5.IssuesWebTest.shouldAddLabelToIssue",
+  "historyId" : "1bc623210c0e9c26264f90416bc16aa5",
+  "time" : {
+    "start" : 1597079880639,
+    "stop" : 1597079881645,
+    "duration" : 1006
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Starting web driver",
+      "time" : {
+        "start" : 1597079880643,
+        "stop" : 1597079880643,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Open issues page `allure-framework/allure2`",
+      "time" : {
+        "start" : 1597079880643,
+        "stop" : 1597079881644,
+        "duration" : 1001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1333aea20be12a5b",
+        "name" : "Page",
+        "source" : "1333aea20be12a5b.html",
+        "type" : "text/html",
+        "size" : 1141
+      } ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Create issue with title `Some issue title here`",
+      "time" : {
+        "start" : 1597079881644,
+        "stop" : 1597079881644,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Some issue title here"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check issue with title `Some issue title here` exists",
+      "time" : {
+        "start" : 1597079881644,
+        "stop" : 1597079881644,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Some issue title here"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Stopping web driver",
+      "time" : {
+        "start" : 1597079881645,
+        "stop" : 1597079881645,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "page",
+    "value" : "/{org}/{repo}/issues"
+  }, {
+    "name" : "owner",
+    "value" : "eroshenkoam"
+  }, {
+    "name" : "layer",
+    "value" : "web"
+  }, {
+    "name" : "feature",
+    "value" : "Issues"
+  }, {
+    "name" : "jira",
+    "value" : "AE-1"
+  }, {
+    "name" : "story",
+    "value" : "Create new issue"
+  }, {
+    "name" : "host",
+    "value" : "fv-az88"
+  }, {
+    "name" : "thread",
+    "value" : "4116@fv-az88.ForkJoinPool-1-worker-0(13)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldAddLabelToIssue"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "eroshenkoam",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "web", "regress" ]
+  },
+  "source" : "d972167e88de4369.json",
+  "parameterValues" : [ ]
+}
