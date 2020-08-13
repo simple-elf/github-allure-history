@@ -16,6 +16,7 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - run:
     - name: Get Allure history
       uses: actions/checkout@v2
       if: always()
@@ -41,10 +42,10 @@ runs:
         PUBLISH_DIR: allure-report
 
 
-#      - name: Composite Allure Action
-#        uses: ./allure-history-action
-#        if: always()
-#        with:
-#          allure_results: ${{ env.working_dir }}/target/allure-results
-#          allure_report: allure-report
-#          branch: gh-pages
+#        - name: Composite Allure Action
+#          uses: ./allure-history-action
+#          if: always()
+#          with:
+#            allure_results: build/allure-results
+#            #allure_report: allure-report
+#            branch: gh-pages

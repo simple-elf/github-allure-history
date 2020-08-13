@@ -39,39 +39,31 @@ jobs:
         run: ./gradlew test
         continue-on-error: true
 
-      - name: Composite Allure Action
-        uses: ./allure-history-action
+      - name: Get Allure history
+        uses: actions/checkout@v2
         if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@v1.1
+        if: always()
+        #id: allure-report
         with:
           allure_results: build/allure-results
+          #gh_pages: gh-pages
           #allure_report: allure-report
-          branch: gh-pages
+          allure_history: allure-history
 
-#      - name: Get Allure history
-#        uses: actions/checkout@v2
-#        if: always()
-#        continue-on-error: true
-#        with:
-#          ref: gh-pages
-#          path: gh-pages
-#
-#      - name: Allure Report action from marketplace
-#        uses: simple-elf/allure-report-action@v1.1
-#        if: always()
-#        #id: allure-report
-#        with:
-#          allure_results: build/allure-results
-#          #gh_pages: gh-pages
-#          #allure_report: allure-report
-#          allure_history: allure-history
-#
-#      - name: Deploy report to Github Pages
-#        if: always()
-#        uses: peaceiris/actions-gh-pages@v2
-#        env:
-#          PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-#          PUBLISH_BRANCH: gh-pages
-#          PUBLISH_DIR: allure-history
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
 
       #- uses: actions/upload-artifact@master
       #  with:
