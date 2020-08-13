@@ -16,30 +16,31 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run:
-    - name: Get Allure history
-      uses: actions/checkout@v2
-      if: always()
-      continue-on-error: true
-      with:
-        ref: ${{ inputs.branch }}
-        path: gh-pages
-
-    - name: Allure Report action from marketplace
-      uses: simple-elf/allure-report-action@v1.1
-      if: always()
-      #id: allure-report
-      with:
-        allure_results: ${{ inputs.allure-results }}
-        allure_report: allure-report
-
-    - name: Deploy report to Github Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_BRANCH: ${{ inputs.branch }}
-        PUBLISH_DIR: allure-report
+    - run: echo 'Composite action'
+    - run: echo 'Composite action 2'
+#    - name: Get Allure history
+#      uses: actions/checkout@v2
+#      if: always()
+#      continue-on-error: true
+#      with:
+#        ref: ${{ inputs.branch }}
+#        path: gh-pages
+#
+#    - name: Allure Report action from marketplace
+#      uses: simple-elf/allure-report-action@v1.1
+#      if: always()
+#      #id: allure-report
+#      with:
+#        allure_results: ${{ inputs.allure-results }}
+#        allure_report: allure-report
+#
+#    - name: Deploy report to Github Pages
+#      if: always()
+#      uses: peaceiris/actions-gh-pages@v2
+#      env:
+#        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#        PUBLISH_BRANCH: ${{ inputs.branch }}
+#        PUBLISH_DIR: allure-report
 
 
 #        - name: Composite Allure Action

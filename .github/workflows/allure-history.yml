@@ -65,6 +65,10 @@ jobs:
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
 
+      - name: Composite Allure Action
+        uses: ./allure-history-action
+        if: always()
+
       #- uses: actions/upload-artifact@master
       #  with:
       #    name: allure-history
