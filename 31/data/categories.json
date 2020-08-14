@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <Some issue title here> but was: <another text>",
+      "children" : [ {
+        "name" : "Create new issue with labels",
+        "uid" : "7818ac667e1e8672",
+        "parentUid" : "760fe81b3ba66ec84ca2cefe6e5ad991",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597382162764,
+          "stop" : 1597382163882,
+          "duration" : 1118
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "760fe81b3ba66ec84ca2cefe6e5ad991"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Element not found for xpath [//div[@class='something']]",
+      "children" : [ {
+        "name" : "Close existing pull request for authorized user",
+        "uid" : "a87ee9a08bf7921e",
+        "parentUid" : "e9129cb4ed11ae45600e3972efb23172",
+        "status" : "broken",
+        "time" : {
+          "start" : 1597382166164,
+          "stop" : 1597382167170,
+          "duration" : 1006
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e9129cb4ed11ae45600e3972efb23172"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
