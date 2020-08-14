@@ -14,12 +14,19 @@ inputs:
     required: true
     default: 'gh-pages'
 runs:
-  using: "composite"
+  using: composite
   steps:
-    - run: echo 'Composite action'
+    - name: Step 1
+      run: echo 'Composite action'
       shell: bash
-    - run: echo 'Composite action 2'
+    - name: Step2
+      run: echo 'Composite action 2'
       shell: bash
+    - id: test_1
+      name: : test_1
+      run: ''
+      shell: ''
+      uses: actions/checkout@v2
 
 #    - name: Get Allure history
 #      uses: actions/checkout@v2
