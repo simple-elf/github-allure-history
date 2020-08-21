@@ -1,0 +1,81 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Selenium timeout: selenium unavailable now",
+      "children" : [ {
+        "name" : "Create new issue with labels",
+        "uid" : "75a2e0c1b24430f1",
+        "parentUid" : "340e656f34185d11d723ba37ac19a21b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1597990616331,
+          "stop" : 1597990616408,
+          "duration" : 77
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "340e656f34185d11d723ba37ac19a21b"
+    }, {
+      "name" : "Element not found for xpath [//div[@class='something']]",
+      "children" : [ {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "b7f2ad9f3f245494",
+        "parentUid" : "e9129cb4ed11ae45600e3972efb23172",
+        "status" : "broken",
+        "time" : {
+          "start" : 1597990620790,
+          "stop" : 1597990622799,
+          "duration" : 2009
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e9129cb4ed11ae45600e3972efb23172"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <Some issue title here> but was: <another text>",
+      "children" : [ {
+        "name" : "Close new issue for authorized user",
+        "uid" : "4548d4a285c25b09",
+        "parentUid" : "760fe81b3ba66ec84ca2cefe6e5ad991",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597990617640,
+          "stop" : 1597990618657,
+          "duration" : 1017
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "760fe81b3ba66ec84ca2cefe6e5ad991"
+    }, {
+      "name" : "expected: <new-feature> but was: <another text>",
+      "children" : [ {
+        "name" : "Close existing pull request for authorized user",
+        "uid" : "c3e5263d1622675d",
+        "parentUid" : "4d9abebe0c75547f83eee2638e05a3c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597990618762,
+          "stop" : 1597990620769,
+          "duration" : 2007
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4d9abebe0c75547f83eee2638e05a3c5"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
