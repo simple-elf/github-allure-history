@@ -33,6 +33,7 @@ echo "\"buildName\":\"GitHub Actions Run #${INPUT_GITHUB_RUN_ID}\",\"buildOrder\
 #cat executor.json
 mv ./executor.json ./${INPUT_ALLURE_RESULTS}
 
+#environment.properties
 echo "URL=${GITHUB_PAGES_WEBSITE_URL}" > environment.properties
 mv ./environment.properties ./${INPUT_ALLURE_RESULTS}
 
