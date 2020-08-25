@@ -5,7 +5,7 @@ on:
     branches-ignore:
       - '!master' # ignore gh-pages
     paths:
-      - '**/${{ github.workflow }}.yml'
+      - '**/allure-history.yml'
     #paths-ignore:
     #- 'docs/**'
 
