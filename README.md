@@ -3,7 +3,7 @@ Example project using GitHub Actions for Allure report with history on GitHub Pa
 
 You can see [Allure Report](https://simple-elf.github.io/github-allure-history/) on GitHub Pages
 
-##GitHub Actions
+## GitHub Actions
 Learn how to use GitHub Actions on [official docs](https://docs.github.com/en/actions)
 
 Here is my advices:
@@ -11,7 +11,7 @@ Here is my advices:
 2. Create a workflow '*.yml' file in '.gradle/workflows' directory. Example workflow [allure-history.yml](https://github.com/simple-elf/github-allure-history/blob/master/.github/workflows/allure-history.yml)
 3. This workflow uses some GitHub Actions, especially 'allure-report-action'. You can see more about this action on [Marketplace](https://github.com/marketplace/actions/allure-report-with-history)
 
-##GitHub Pages
+## GitHub Pages
 Learn how to use GitHub Pages on [official docs](https://docs.github.com/en/github/working-with-github-pages)
 
 Here is my advices:
