@@ -1,0 +1,328 @@
+{
+  "uid" : "31ae3ef7aa6d6fb1",
+  "name" : "Create new issue with labels",
+  "fullName" : "io.qameta.allure.examples.junit5.IssuesWebTest.shouldAddLabelToIssue",
+  "historyId" : "1bc623210c0e9c26264f90416bc16aa5",
+  "time" : {
+    "start" : 1600325269798,
+    "stop" : 1600325270808,
+    "duration" : 1010
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startDriver",
+    "time" : {
+      "start" : 1600325269802,
+      "stop" : 1600325269802,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Starting web driver",
+      "time" : {
+        "start" : 1600325269802,
+        "stop" : 1600325269802,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open issues page `allure-framework/allure2`",
+      "time" : {
+        "start" : 1600325269803,
+        "stop" : 1600325270806,
+        "duration" : 1003
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c964e84e9ef276c5",
+        "name" : "Page",
+        "source" : "c964e84e9ef276c5.html",
+        "type" : "text/html",
+        "size" : 1141
+      } ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Create issue with title `Some issue title here`",
+      "time" : {
+        "start" : 1600325270806,
+        "stop" : 1600325270807,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Some issue title here"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check issue with title `Some issue title here` exists",
+      "time" : {
+        "start" : 1600325270807,
+        "stop" : 1600325270807,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Some issue title here"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "stopDriver",
+    "time" : {
+      "start" : 1600325270807,
+      "stop" : 1600325270807,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Stopping web driver",
+      "time" : {
+        "start" : 1600325270807,
+        "stop" : 1600325270807,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "layer",
+    "value" : "web"
+  }, {
+    "name" : "owner",
+    "value" : "eroshenkoam"
+  }, {
+    "name" : "page",
+    "value" : "/{org}/{repo}/issues"
+  }, {
+    "name" : "feature",
+    "value" : "Issues"
+  }, {
+    "name" : "story",
+    "value" : "Create new issue"
+  }, {
+    "name" : "jira",
+    "value" : "AE-1"
+  }, {
+    "name" : "host",
+    "value" : "fv-az195"
+  }, {
+    "name" : "thread",
+    "value" : "4231@fv-az195.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldAddLabelToIssue"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "eroshenkoam",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "89e445968985a1a9",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/46//#testresult/89e445968985a1a9",
+        "status" : "failed",
+        "statusDetails" : "expected: <Some issue title here> but was: <another text>",
+        "time" : {
+          "start" : 1600324929815,
+          "stop" : 1600324930840,
+          "duration" : 1025
+        }
+      }, {
+        "uid" : "1d8e2ac91cc90bab",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/45//#testresult/1d8e2ac91cc90bab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324595342,
+          "stop" : 1600324596345,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "b2030eb3d59c64c2",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/44//#testresult/b2030eb3d59c64c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324248147,
+          "stop" : 1600324249150,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "b6af8baa59f4f38a",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/43//#testresult/b6af8baa59f4f38a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600323889361,
+          "stop" : 1600323890365,
+          "duration" : 1004
+        }
+      }, {
+        "uid" : "bab0bf5fca1f63f1",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/42//#testresult/bab0bf5fca1f63f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600322918700,
+          "stop" : 1600322919703,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "aa30ff5c79f58e1b",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/41//#testresult/aa30ff5c79f58e1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600322232492,
+          "stop" : 1600322233496,
+          "duration" : 1004
+        }
+      }, {
+        "uid" : "1d58efd27576647f",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/40//#testresult/1d58efd27576647f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600321894258,
+          "stop" : 1600321895263,
+          "duration" : 1005
+        }
+      }, {
+        "uid" : "32c453697fb0974",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/38//#testresult/32c453697fb0974",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600321158070,
+          "stop" : 1600321159074,
+          "duration" : 1004
+        }
+      }, {
+        "uid" : "cfe39bee197eb2c2",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/37//#testresult/cfe39bee197eb2c2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600317845647,
+          "stop" : 1600317846670,
+          "duration" : 1023
+        }
+      }, {
+        "uid" : "f1ecf85b8fb462b",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/34//#testresult/f1ecf85b8fb462b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598357665404,
+          "stop" : 1598357666517,
+          "duration" : 1113
+        }
+      }, {
+        "uid" : "75a2e0c1b24430f1",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/33//#testresult/75a2e0c1b24430f1",
+        "status" : "broken",
+        "statusDetails" : "Selenium timeout: selenium unavailable now",
+        "time" : {
+          "start" : 1597990616331,
+          "stop" : 1597990616408,
+          "duration" : 77
+        }
+      } ]
+    },
+    "tags" : [ "web", "regress" ]
+  },
+  "source" : "31ae3ef7aa6d6fb1.json",
+  "parameterValues" : [ ]
+}
