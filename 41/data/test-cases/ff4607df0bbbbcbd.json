@@ -1,0 +1,248 @@
+{
+  "uid" : "ff4607df0bbbbcbd",
+  "name" : "Create issue via api",
+  "fullName" : "io.qameta.allure.examples.junit5.IssuesRestTest.shouldCreateUserNote",
+  "historyId" : "aac6ca19ebc1fff6cd8f75cb37fed539",
+  "time" : {
+    "start" : 1600322228115,
+    "stop" : 1600322228207,
+    "duration" : 92
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create issue with title `First Note`",
+      "time" : {
+        "start" : 1600322228191,
+        "stop" : 1600322228194,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST /repos/allure-framework/allure2/issues",
+        "time" : {
+          "start" : 1600322228192,
+          "stop" : 1600322228193,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      }, {
+        "name" : "title",
+        "value" : "First Note"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check note with content `First Note` exists",
+      "time" : {
+        "start" : 1600322228194,
+        "stop" : 1600322228195,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /repos/allure-framework/allure2/issues?text=First Note",
+        "time" : {
+          "start" : 1600322228195,
+          "stop" : 1600322228195,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "GET /repos/allure-framework/allure2/issues/10",
+        "time" : {
+          "start" : 1600322228195,
+          "stop" : 1600322228195,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      }, {
+        "name" : "title",
+        "value" : "First Note"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "api"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "layer",
+    "value" : "rest"
+  }, {
+    "name" : "url",
+    "value" : "/repos/{owner}/{repo}/issues"
+  }, {
+    "name" : "feature",
+    "value" : "Issues"
+  }, {
+    "name" : "owner",
+    "value" : "baev"
+  }, {
+    "name" : "story",
+    "value" : "Create new issue"
+  }, {
+    "name" : "host",
+    "value" : "fv-az148"
+  }, {
+    "name" : "thread",
+    "value" : "4308@fv-az148.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.IssuesRestTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.IssuesRestTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldCreateUserNote"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.IssuesRestTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "owner",
+    "value" : "allure-framework"
+  }, {
+    "name" : "repo",
+    "value" : "allure2"
+  }, {
+    "name" : "title",
+    "value" : "First Note"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "baev",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "de52d8135b9f0534",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/40//#testresult/de52d8135b9f0534",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600321891865,
+          "stop" : 1600321891945,
+          "duration" : 80
+        }
+      }, {
+        "uid" : "ad5811ea100d0aa8",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/38//#testresult/ad5811ea100d0aa8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600321153735,
+          "stop" : 1600321153813,
+          "duration" : 78
+        }
+      }, {
+        "uid" : "53382fb82c02c935",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/37//#testresult/53382fb82c02c935",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600317842239,
+          "stop" : 1600317842335,
+          "duration" : 96
+        }
+      }, {
+        "uid" : "d9afb6fe10cb7795",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/34//#testresult/d9afb6fe10cb7795",
+        "status" : "passed",
+        "time" : {
+          "start" : 1598357668795,
+          "stop" : 1598357668821,
+          "duration" : 26
+        }
+      }, {
+        "uid" : "72e51350bc9bbbb3",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/33//#testresult/72e51350bc9bbbb3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597990618699,
+          "stop" : 1597990618725,
+          "duration" : 26
+        }
+      } ]
+    },
+    "tags" : [ "smoke", "api" ]
+  },
+  "source" : "ff4607df0bbbbcbd.json",
+  "parameterValues" : [ "allure-framework", "allure2", "First Note" ]
+}
