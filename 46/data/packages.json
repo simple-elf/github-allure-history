@@ -1,0 +1,138 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "io.qameta.allure.examples.junit5",
+    "children" : [ {
+      "name" : "IssuesRestTest",
+      "children" : [ {
+        "name" : "shouldCreateUserNote",
+        "uid" : "a74f790d951fc354",
+        "parentUid" : "fe2da8b57d3c3b1b7ed5caaca7df0986",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324927483,
+          "stop" : 1600324927572,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "shouldCreateUserNote",
+        "uid" : "e569ceaa98d8a033",
+        "parentUid" : "fe2da8b57d3c3b1b7ed5caaca7df0986",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324927687,
+          "stop" : 1600324927688,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      }, {
+        "name" : "shouldDeleteUserNote",
+        "uid" : "a5078123fee97952",
+        "parentUid" : "fe2da8b57d3c3b1b7ed5caaca7df0986",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324927697,
+          "stop" : 1600324927700,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "shouldDeleteUserNote",
+        "uid" : "fe49bf42614dace1",
+        "parentUid" : "fe2da8b57d3c3b1b7ed5caaca7df0986",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324927707,
+          "stop" : 1600324927708,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      } ],
+      "uid" : "fe2da8b57d3c3b1b7ed5caaca7df0986"
+    }, {
+      "name" : "PullRequestsWebTest",
+      "children" : [ {
+        "name" : "shouldClosePullRequest",
+        "uid" : "70358aad6e7f9684",
+        "parentUid" : "bb04bca8d14f1889bb66dec5531f9f40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324927730,
+          "stop" : 1600324929766,
+          "duration" : 2036
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldCreatePullRequest",
+        "uid" : "804932af59dce8fb",
+        "parentUid" : "bb04bca8d14f1889bb66dec5531f9f40",
+        "status" : "broken",
+        "time" : {
+          "start" : 1600324929781,
+          "stop" : 1600324929795,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bb04bca8d14f1889bb66dec5531f9f40"
+    }, {
+      "name" : "IssuesWebTest",
+      "children" : [ {
+        "name" : "shouldAddLabelToIssue",
+        "uid" : "89e445968985a1a9",
+        "parentUid" : "b2ac19d25be3adbcd240a5ac3ac244c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1600324929815,
+          "stop" : 1600324930840,
+          "duration" : 1025
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldCreateIssue",
+        "uid" : "5535ddbc85ad9595",
+        "parentUid" : "b2ac19d25be3adbcd240a5ac3ac244c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324930844,
+          "stop" : 1600324931847,
+          "duration" : 1003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "shouldCloseIssue",
+        "uid" : "62d028a7b02c7639",
+        "parentUid" : "b2ac19d25be3adbcd240a5ac3ac244c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600324931850,
+          "stop" : 1600324932854,
+          "duration" : 1004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2ac19d25be3adbcd240a5ac3ac244c6"
+    } ],
+    "uid" : "io.qameta.allure.examples.junit5"
+  } ],
+  "name" : "packages"
+}
