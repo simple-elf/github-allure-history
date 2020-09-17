@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://simple-elf.github.io/github-allure-history",
+  "buildOrder" : 48,
+  "buildName" : "GitHub Actions Run #258865554",
+  "buildUrl" : "https://github.com/simple-elf/github-allure-history/actions/runs/258865554",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://simple-elf.github.io/github-allure-history/48/"
+} ]
