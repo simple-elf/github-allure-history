@@ -1,15 +1,16 @@
 image: gradle:alpine
 
-#variables:
-#  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
 before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
 cache:
+  policy: pull-push
   paths:
-    - ~/.m2/repository
-    - ~/.gradle/caches
+    - .m2/repository
+    - .gradle/caches
     - .allure
 
 build:
@@ -31,6 +32,9 @@ test:
     paths:
       - build
       - .gradle
+  artifacts:
+    paths:
+      - build/allure-results
 
 pages:
   stage: deploy
