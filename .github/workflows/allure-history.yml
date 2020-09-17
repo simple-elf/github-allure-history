@@ -1,11 +1,11 @@
 name: Allure Reports with history
 
 on:
-  shedule:
+  schedule:
     - cron: '*/3 * * * *'
-  push:
-    branches-ignore:
-      - '!master' # ignore gh-pages
+  #push:
+    #branches-ignore:
+    #  - '!master' # ignore gh-pages
     #paths:
     #  - '**/allure-history.yml'
 
