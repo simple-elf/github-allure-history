@@ -1,0 +1,300 @@
+{
+  "uid" : "338dda2bf9d10ef0",
+  "name" : "Create new pull request for authorized user",
+  "fullName" : "io.qameta.allure.examples.junit5.PullRequestsWebTest.shouldCreatePullRequest",
+  "historyId" : "5446a437f80f1e6780da390db18db141",
+  "time" : {
+    "start" : 1600323887349,
+    "stop" : 1600323889354,
+    "duration" : 2005
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startDriver",
+    "time" : {
+      "start" : 1600323887350,
+      "stop" : 1600323887350,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Starting web driver",
+      "time" : {
+        "start" : 1600323887350,
+        "stop" : 1600323887350,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open pull requests page `allure-framework/allure2`",
+      "time" : {
+        "start" : 1600323887351,
+        "stop" : 1600323888351,
+        "duration" : 1000
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5e9178750b3dc22b",
+        "name" : "Page",
+        "source" : "5e9178750b3dc22b.html",
+        "type" : "text/html",
+        "size" : 1141
+      } ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Create pull request from branch `new-feature`",
+      "time" : {
+        "start" : 1600323888352,
+        "stop" : 1600323889352,
+        "duration" : 1000
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "branch",
+        "value" : "new-feature"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check pull request for branch `new-feature` exists",
+      "time" : {
+        "start" : 1600323889353,
+        "stop" : 1600323889353,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "branch",
+        "value" : "new-feature"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "stopDriver",
+    "time" : {
+      "start" : 1600323889354,
+      "stop" : 1600323889354,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Stopping web driver",
+      "time" : {
+        "start" : 1600323889354,
+        "stop" : 1600323889354,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "tag",
+    "value" : "regress"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "page",
+    "value" : "/{org}/{repo}/pulls"
+  }, {
+    "name" : "layer",
+    "value" : "web"
+  }, {
+    "name" : "feature",
+    "value" : "Pull Requests"
+  }, {
+    "name" : "owner",
+    "value" : "eroshenkoam"
+  }, {
+    "name" : "jira",
+    "value" : "AE-1"
+  }, {
+    "name" : "jira",
+    "value" : "AE-2"
+  }, {
+    "name" : "story",
+    "value" : "Create new pull request"
+  }, {
+    "name" : "host",
+    "value" : "fv-az50"
+  }, {
+    "name" : "thread",
+    "value" : "4162@fv-az50.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.PullRequestsWebTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.PullRequestsWebTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldCreatePullRequest"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.PullRequestsWebTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "eroshenkoam",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "b4989d5b129c7ec9",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/42//#testresult/b4989d5b129c7ec9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600322916687,
+          "stop" : 1600322918691,
+          "duration" : 2004
+        }
+      }, {
+        "uid" : "164caa3f2fe9d9ce",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/41//#testresult/164caa3f2fe9d9ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600322230477,
+          "stop" : 1600322232482,
+          "duration" : 2005
+        }
+      }, {
+        "uid" : "f1be7a2b407ced88",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/40//#testresult/f1be7a2b407ced88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1600321892178,
+          "stop" : 1600321894247,
+          "duration" : 2069
+        }
+      }, {
+        "uid" : "f4fe932fffe2a785",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/38//#testresult/f4fe932fffe2a785",
+        "status" : "failed",
+        "statusDetails" : "expected: <new-feature> but was: <another text>",
+        "time" : {
+          "start" : 1600321156013,
+          "stop" : 1600321158033,
+          "duration" : 2020
+        }
+      }, {
+        "uid" : "ece0b1ee4b543f57",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/37//#testresult/ece0b1ee4b543f57",
+        "status" : "broken",
+        "statusDetails" : "Element not found for xpath [//div[@class='something']]",
+        "time" : {
+          "start" : 1600317844623,
+          "stop" : 1600317845632,
+          "duration" : 1009
+        }
+      }, {
+        "uid" : "dbcc577e4a886405",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/34//#testresult/dbcc577e4a886405",
+        "status" : "broken",
+        "statusDetails" : "Element not found for xpath [//div[@class='something']]",
+        "time" : {
+          "start" : 1598357670894,
+          "stop" : 1598357672898,
+          "duration" : 2004
+        }
+      }, {
+        "uid" : "b7f2ad9f3f245494",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/33//#testresult/b7f2ad9f3f245494",
+        "status" : "broken",
+        "statusDetails" : "Element not found for xpath [//div[@class='something']]",
+        "time" : {
+          "start" : 1597990620790,
+          "stop" : 1597990622799,
+          "duration" : 2009
+        }
+      } ]
+    },
+    "tags" : [ "web", "regress", "smoke" ]
+  },
+  "source" : "338dda2bf9d10ef0.json",
+  "parameterValues" : [ ]
+}
