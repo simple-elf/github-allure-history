@@ -4,8 +4,8 @@ on:
   push:
     branches-ignore:
       - '!master' # ignore gh-pages
-    paths:
-      - '**/allure-history.yml'
+    #paths:
+    #  - '**/allure-history.yml'
 
 #env:
 #  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
