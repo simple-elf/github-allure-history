@@ -6,8 +6,6 @@ on:
       - '!master' # ignore gh-pages
     paths:
       - '**/allure-history.yml'
-    paths-ignore:
-      - '.gitlab-ci.yml'
 
 #env:
 #  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
