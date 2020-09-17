@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Element not found for xpath [//div[@class='something']]",
+      "children" : [ {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "ece0b1ee4b543f57",
+        "parentUid" : "e9129cb4ed11ae45600e3972efb23172",
+        "status" : "broken",
+        "time" : {
+          "start" : 1600317844623,
+          "stop" : 1600317845632,
+          "duration" : 1009
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e9129cb4ed11ae45600e3972efb23172"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
