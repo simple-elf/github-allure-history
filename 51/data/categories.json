@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Selenium timeout: selenium unavailable now",
+      "children" : [ {
+        "name" : "Create new issue authorized user",
+        "uid" : "8c4866fa23930181",
+        "parentUid" : "340e656f34185d11d723ba37ac19a21b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1600327475648,
+          "stop" : 1600327476660,
+          "duration" : 1012
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "340e656f34185d11d723ba37ac19a21b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
