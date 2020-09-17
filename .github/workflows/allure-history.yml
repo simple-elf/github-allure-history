@@ -1,6 +1,8 @@
 name: Allure Reports with history
 
 on:
+  shedule:
+    - cron: '*/3 * * * *'
   push:
     branches-ignore:
       - '!master' # ignore gh-pages
