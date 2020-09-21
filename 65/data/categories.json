@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Selenium timeout: selenium unavailable now",
+      "children" : [ {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "9ef72ede9fb41665",
+        "parentUid" : "340e656f34185d11d723ba37ac19a21b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1600698590865,
+          "stop" : 1600698590878,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "340e656f34185d11d723ba37ac19a21b"
+    }, {
+      "name" : "Element not found for xpath [//div[@class='something']]",
+      "children" : [ {
+        "name" : "Create new issue with labels",
+        "uid" : "49f224d05589340a",
+        "parentUid" : "e9129cb4ed11ae45600e3972efb23172",
+        "status" : "broken",
+        "time" : {
+          "start" : 1600698590897,
+          "stop" : 1600698591905,
+          "duration" : 1008
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e9129cb4ed11ae45600e3972efb23172"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
