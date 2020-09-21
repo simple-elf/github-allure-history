@@ -6,7 +6,8 @@ on:
   push:
     branches-ignore:
       - '!master' # ignore gh-pages
-    #paths:
+    paths:
+      - '!.gitlab-ci.yml'
     #  - '**/allure-history.yml'
 
 #env:
