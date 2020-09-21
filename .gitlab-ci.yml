@@ -32,6 +32,9 @@ build:
 
 test:
   stage: test
+  image: gradle:alpine
+  tags:
+    - docker
   script: ./gradlew test
   cache:
     key: "$CI_COMMIT_REF_NAME"
