@@ -8,10 +8,8 @@ on:
       - '!master' # ignore gh-pages
     paths:
       - '!.gitlab-ci.yml'
+      - '!allure-template.yml'
     #  - '**/allure-history.yml'
-
-#env:
-#  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
 jobs:
   autotests:
