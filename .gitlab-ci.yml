@@ -1,20 +1,27 @@
-image: gradle:alpine
+#variables:
+#  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
 
-variables:
-  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
-
-before_script:
-  - export GRADLE_USER_HOME=`pwd`/.gradle
+#before_script:
+#  - export GRADLE_USER_HOME=`pwd`/.gradle
 
 cache:
   policy: pull-push
   paths:
     - .m2/repository
     - .gradle/caches
-    - .allure
+
+stages:
+  - build
+  - test
+  - history
+  - allure
+  - deploy
 
 build:
   stage: build
+  image: gradle:alpine
+  tags:
+    - docker
   script: ./gradlew compileTestJava
   cache:
     key: "$CI_COMMIT_REF_NAME"
@@ -33,17 +40,52 @@ test:
       - build
       - .gradle
   artifacts:
+    when: always
     paths:
       - build/allure-results
+    expire_in: 1 day
+
+allure-history:
+  stage: history
+  tags:
+    - docker
+  image: storytel/alpine-bash-curl
+  script:
+    - apk add unzip
+    - 'curl --location --output artifacts.zip "https://gitlab.com/api/v4/projects/21185524/jobs/artifacts/master/download?job=pages&job_token=$CI_JOB_TOKEN"'
+    - unzip artifacts.zip
+    - chmod -R 777 public
+    - cp -r ./public/history ./build/allure-results
+  allow_failure: true
+  artifacts:
+    paths:
+      - ./build/allure-results
+    expire_in: 1 day
+  rules:
+    - when: always
+
+allure-report:
+  stage: allure
+  tags:
+    - docker
+  image: frankescobar/allure-docker-service
+  script:
+    - allure generate -c ./build/allure-results -o ./allure-report
+  artifacts:
+    paths:
+      - ./build/allure-results
+      - ./allure-report
+    expire_in: 1 day
+  rules:
+    - when: always
 
 pages:
   stage: deploy
-  dependencies:
-    - test
   script:
-    - ./gradlew allureReport
-    - mv build/reports/allure-report/ public/
+    - mv ./allure-report/ public/
   artifacts:
     paths:
       - public
+  rules:
+    - when: always
 
