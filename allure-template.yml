@@ -1,0 +1,14 @@
+allure-report:
+  stage: allure
+  tags:
+    - docker
+  image: frankescobar/allure-docker-service
+  script:
+    - allure generate -c ./build/allure-results -o ./allure-report
+  artifacts:
+    paths:
+      - ./build/allure-results
+      - ./allure-report
+    expire_in: 1 day
+  rules:
+    - when: always
