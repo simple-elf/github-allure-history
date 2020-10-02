@@ -24,8 +24,6 @@ stages:
 build:
   stage: build
   image: gradle:alpine
-  tags:
-    - docker
   script: ./gradlew compileTestJava
   cache:
     key: "$CI_COMMIT_REF_NAME"
@@ -37,8 +35,6 @@ build:
 test:
   stage: test
   image: gradle:alpine
-  tags:
-    - docker
   script: ./gradlew test
   cache:
     key: "$CI_COMMIT_REF_NAME"
@@ -51,35 +47,3 @@ test:
     paths:
       - build/allure-results
     expire_in: 1 day
-
-allure-history:
-  stage: history
-  tags:
-    - docker
-  image: storytel/alpine-bash-curl
-  script:
-    - apk add unzip
-    - 'curl --location --output artifacts.zip "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/jobs/artifacts/master/download?job=pages&job_token=${CI_JOB_TOKEN}"'
-    - unzip artifacts.zip
-    - chmod -R 777 public
-    - cp -r ./public/history ./build/allure-results
-  allow_failure: true
-  artifacts:
-    paths:
-      - ./build/allure-results
-    expire_in: 1 day
-  rules:
-    - when: always
-
-
-
-pages:
-  stage: deploy
-  script:
-    - mv ./allure-report/ public/
-  artifacts:
-    paths:
-      - public
-  rules:
-    - when: always
-

@@ -1,7 +1,23 @@
+allure-history:
+  stage: history
+  image: storytel/alpine-bash-curl
+  script:
+    - apk add unzip
+    - 'curl --location --output artifacts.zip "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/jobs/artifacts/master/download?job=pages&job_token=${CI_JOB_TOKEN}"'
+    - unzip artifacts.zip
+    - chmod -R 777 public
+    - cp -r ./public/history ./build/allure-results
+    - echo '{"name":"GitLab CI","type":"gitlab"}' > ./build/allure-results/executor.json
+  allow_failure: true
+  artifacts:
+    paths:
+      - ./build/allure-results
+    expire_in: 1 day
+  rules:
+    - when: always
+
 allure-report:
   stage: allure
-  tags:
-    - docker
   image: frankescobar/allure-docker-service
   script:
     - allure generate -c ./build/allure-results -o ./allure-report
@@ -10,5 +26,15 @@ allure-report:
       - ./build/allure-results
       - ./allure-report
     expire_in: 1 day
+  rules:
+    - when: always
+
+pages:
+  stage: deploy
+  script:
+    - mv ./allure-report/ public/
+  artifacts:
+    paths:
+      - public
   rules:
     - when: always
