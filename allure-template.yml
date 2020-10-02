@@ -18,7 +18,8 @@ allure-history:
 
 allure-report:
   stage: allure
-  image: frankescobar/allure-docker-service
+  #image: frankescobar/allure-docker-service
+  image: simple1elf/allure-docker
   script:
     - allure generate -c ./build/allure-results -o ./allure-report
   artifacts:
