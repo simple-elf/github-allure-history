@@ -9,7 +9,7 @@ on:
     paths:
       - '!.gitlab-ci.yml'
       - '!allure-template.yml'
-    #  - '**/allure-history.yml'
+      - '**/allure-history.yml'
 
 jobs:
   autotests:
@@ -49,7 +49,7 @@ jobs:
           path: gh-pages
 
       - name: Keep last 20 reports
-        run: ls | head -n -21 | xargs rm -rd
+        run: ls gh-pages | head -n -21 | xargs rm -rd
 
       - name: Allure Report action
         uses: simple-elf/allure-report-action@master
