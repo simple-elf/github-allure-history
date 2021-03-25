@@ -48,6 +48,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
+      - run: sudo chown -R $USER:$USER gh-pages
       - name: Keep last 20 reports
         run: ls gh-pages | head -n -21 | xargs rm -rd
 
