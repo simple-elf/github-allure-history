@@ -1,0 +1,91 @@
+[ {
+  "uid" : "9143e62842cfcf14",
+  "name" : "Close issue via api",
+  "time" : {
+    "start" : 1616684484820,
+    "stop" : 1616684484823,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "905953a361dd8b7d",
+  "name" : "Close new issue for authorized user",
+  "time" : {
+    "start" : 1616684490992,
+    "stop" : 1616684491996,
+    "duration" : 1004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2353a1694407c7d3",
+  "name" : "Create new pull request for authorized user",
+  "time" : {
+    "start" : 1616684486924,
+    "stop" : 1616684488927,
+    "duration" : 2003
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42f7fd272feb15fe",
+  "name" : "Create new issue authorized user",
+  "time" : {
+    "start" : 1616684489971,
+    "stop" : 1616684490975,
+    "duration" : 1004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc7fc55616e2f68",
+  "name" : "Close issue via api",
+  "time" : {
+    "start" : 1616684484804,
+    "stop" : 1616684484808,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d69ae011143b81b8",
+  "name" : "Create new issue with labels",
+  "time" : {
+    "start" : 1616684488933,
+    "stop" : 1616684489937,
+    "duration" : 1004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d0fbde17a7f58a6",
+  "name" : "Create issue via api",
+  "time" : {
+    "start" : 1616684484786,
+    "stop" : 1616684484789,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "862a0163197a87be",
+  "name" : "Create issue via api",
+  "time" : {
+    "start" : 1616684484549,
+    "stop" : 1616684484636,
+    "duration" : 87
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1e537e3bc6be9be",
+  "name" : "Close existing pull request for authorized user",
+  "time" : {
+    "start" : 1616684484859,
+    "stop" : 1616684486906,
+    "duration" : 2047
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

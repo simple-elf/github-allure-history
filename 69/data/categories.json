@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <new-feature> but was: <another text>",
+      "children" : [ {
+        "name" : "Close existing pull request for authorized user",
+        "uid" : "a1e537e3bc6be9be",
+        "parentUid" : "4d9abebe0c75547f83eee2638e05a3c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1616684484859,
+          "stop" : 1616684486906,
+          "duration" : 2047
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4d9abebe0c75547f83eee2638e05a3c5"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
