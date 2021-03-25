@@ -2,7 +2,7 @@ name: Allure Reports with history
 
 on:
   #schedule:
-  #  - cron: '*/3 * * * *'
+  #  - cron: '*/10 * * * *'
   push:
     branches-ignore:
       - '!master' # ignore gh-pages
@@ -13,7 +13,7 @@ on:
 
 jobs:
   autotests:
-    name: Generate Allure Report
+    name: Upload allure results to Allure EE
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -47,6 +47,9 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
+
+      - name: Keep last 20 reports
+        run: ls | head -n -21 | xargs rm -rd
 
       - name: Allure Report action
         uses: simple-elf/allure-report-action@master
