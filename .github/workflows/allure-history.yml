@@ -11,6 +11,7 @@ on:
       - '!allure-template.yml'
       - '**/allure-history.yml'
       - 'allure-report-action'
+      - 'allure-report-action2'
 
 jobs:
   autotests:
