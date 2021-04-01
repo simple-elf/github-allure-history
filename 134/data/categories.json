@@ -1,0 +1,77 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <new-feature> but was: <another text>",
+      "children" : [ {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "597b11e0e28966b8",
+        "parentUid" : "4d9abebe0c75547f83eee2638e05a3c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1617316510117,
+          "stop" : 1617316512135,
+          "duration" : 2018
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4d9abebe0c75547f83eee2638e05a3c5"
+    }, {
+      "name" : "expected: <Some issue title here> but was: <another text>",
+      "children" : [ {
+        "name" : "Create new issue with labels",
+        "uid" : "66e7dbdea5f8a814",
+        "parentUid" : "760fe81b3ba66ec84ca2cefe6e5ad991",
+        "status" : "failed",
+        "time" : {
+          "start" : 1617316512157,
+          "stop" : 1617316513161,
+          "duration" : 1004
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Close new issue for authorized user",
+        "uid" : "206a29092d2377e",
+        "parentUid" : "760fe81b3ba66ec84ca2cefe6e5ad991",
+        "status" : "failed",
+        "time" : {
+          "start" : 1617316514187,
+          "stop" : 1617316515192,
+          "duration" : 1005
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "760fe81b3ba66ec84ca2cefe6e5ad991"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Selenium timeout: selenium unavailable now",
+      "children" : [ {
+        "name" : "Create new issue authorized user",
+        "uid" : "b595c9c9289d2a5f",
+        "parentUid" : "340e656f34185d11d723ba37ac19a21b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1617316513171,
+          "stop" : 1617316514179,
+          "duration" : 1008
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "340e656f34185d11d723ba37ac19a21b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
