@@ -49,5 +49,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - RELEASE='${{ inputs.allure_version }}'
+    - ${{ inputs.allure_version }}
+    - --build-arg RELEASE=${{ inputs.allure_version }}
   entrypoint: '/entrypoint.sh'

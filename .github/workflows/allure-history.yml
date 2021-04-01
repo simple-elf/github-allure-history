@@ -49,11 +49,11 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Keep last 20 reports
-        run: |
-          sudo chown -R $USER:$USER gh-pages
-          cd gh-pages
-          ls | head -n -21 | xargs rm -rd
+      #- name: Keep last 20 reports
+      #  run: |
+      #    sudo chown -R $USER:$USER gh-pages
+      #    cd gh-pages
+      #    ls | head -n -21 | xargs rm -rd
 
       - name: Allure Report action
         #uses: simple-elf/allure-report-action@master
