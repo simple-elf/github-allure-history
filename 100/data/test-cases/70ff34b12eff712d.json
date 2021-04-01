@@ -1,0 +1,300 @@
+{
+  "uid" : "70ff34b12eff712d",
+  "name" : "Create new issue authorized user",
+  "fullName" : "io.qameta.allure.examples.junit5.IssuesWebTest.shouldCreateIssue",
+  "historyId" : "a85ace4c61ab812d1a06adc8244e15a4",
+  "time" : {
+    "start" : 1617293419134,
+    "stop" : 1617293420139,
+    "duration" : 1005
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startDriver",
+    "time" : {
+      "start" : 1617293419135,
+      "stop" : 1617293419135,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Starting web driver",
+      "time" : {
+        "start" : 1617293419135,
+        "stop" : 1617293419135,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open issues page `allure-framework/allure2`",
+      "time" : {
+        "start" : 1617293419136,
+        "stop" : 1617293420137,
+        "duration" : 1001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9aff3e8b04a7994f",
+        "name" : "Page",
+        "source" : "9aff3e8b04a7994f.html",
+        "type" : "text/html",
+        "size" : 1141
+      } ],
+      "parameters" : [ {
+        "name" : "owner",
+        "value" : "allure-framework"
+      }, {
+        "name" : "repo",
+        "value" : "allure2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Create issue with title `Some issue title here`",
+      "time" : {
+        "start" : 1617293420137,
+        "stop" : 1617293420137,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Some issue title here"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Check issue with title `Some issue title here` exists",
+      "time" : {
+        "start" : 1617293420138,
+        "stop" : 1617293420138,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "title",
+        "value" : "Some issue title here"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "stopDriver",
+    "time" : {
+      "start" : 1617293420138,
+      "stop" : 1617293420139,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Stopping web driver",
+      "time" : {
+        "start" : 1617293420139,
+        "stop" : 1617293420139,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "web"
+  }, {
+    "name" : "tag",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "Issues"
+  }, {
+    "name" : "layer",
+    "value" : "web"
+  }, {
+    "name" : "owner",
+    "value" : "eroshenkoam"
+  }, {
+    "name" : "page",
+    "value" : "/{org}/{repo}/issues"
+  }, {
+    "name" : "jira",
+    "value" : "AE-2"
+  }, {
+    "name" : "story",
+    "value" : "Create new issue"
+  }, {
+    "name" : "host",
+    "value" : "fv-az266-981"
+  }, {
+    "name" : "thread",
+    "value" : "2083@fv-az266-981.ForkJoinPool-1-worker-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "testClass",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldCreateIssue"
+  }, {
+    "name" : "suite",
+    "value" : "io.qameta.allure.examples.junit5.IssuesWebTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "eroshenkoam",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "49e98150c5b12fde",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/99//#testresult/49e98150c5b12fde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617293319348,
+          "stop" : 1617293320352,
+          "duration" : 1004
+        }
+      }, {
+        "uid" : "d9be12d6723b475d",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/98//#testresult/d9be12d6723b475d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617293282510,
+          "stop" : 1617293283515,
+          "duration" : 1005
+        }
+      }, {
+        "uid" : "11523a579218ee3e",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/97//#testresult/11523a579218ee3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617292824024,
+          "stop" : 1617292825029,
+          "duration" : 1005
+        }
+      }, {
+        "uid" : "9b99357fe32d21a0",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/96//#testresult/9b99357fe32d21a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617292647769,
+          "stop" : 1617292648772,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "eab945c8ea37aef3",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/95//#testresult/eab945c8ea37aef3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617292445503,
+          "stop" : 1617292446507,
+          "duration" : 1004
+        }
+      }, {
+        "uid" : "e77a1b0491a935",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/94//#testresult/e77a1b0491a935",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617291831496,
+          "stop" : 1617291832499,
+          "duration" : 1003
+        }
+      }, {
+        "uid" : "bec4aee5612f1c5c",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/93//#testresult/bec4aee5612f1c5c",
+        "status" : "failed",
+        "statusDetails" : "expected: <Some issue title here> but was: <another text>",
+        "time" : {
+          "start" : 1617291688110,
+          "stop" : 1617291689125,
+          "duration" : 1015
+        }
+      }, {
+        "uid" : "7a15f80b5e17412d",
+        "reportUrl" : "https://simple-elf.github.io/github-allure-history/92//#testresult/7a15f80b5e17412d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617291189276,
+          "stop" : 1617291190280,
+          "duration" : 1004
+        }
+      } ]
+    },
+    "tags" : [ "critical", "web" ]
+  },
+  "source" : "70ff34b12eff712d.json",
+  "parameterValues" : [ ]
+}
