@@ -53,10 +53,8 @@ runs:
 
   using: composite
   steps:
-    - run: ls -l
-      shell: bash
     - id: docker-build
-      run: docker build --build-arg RELEASE=${{ inputs.allure_version }} -t docker-action -f allure-report-action/Dockerfile .
+      run: cd allure-report-action && docker build --build-arg RELEASE=${{ inputs.allure_version }} -t docker-action .
       shell: bash
     - id: docker-run
       run: docker run --rm -v $(pwd):/github/workspace --workdir /github/workspace docker-action
