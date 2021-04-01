@@ -49,5 +49,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - RELEASE=${{ inputs.allure_version }}
-  entrypoint: 'entrypoint.sh'
+    - RELEASE='${{ inputs.allure_version }}'
+  entrypoint: '/entrypoint.sh'
