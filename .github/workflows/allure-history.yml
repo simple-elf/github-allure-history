@@ -11,7 +11,6 @@ on:
       - '!allure-template.yml'
       - '**/allure-history.yml'
       - 'allure-report-action'
-      - 'allure-report-action2'
 
 jobs:
   autotests:
@@ -58,7 +57,7 @@ jobs:
 
       - name: Allure Report action
         #uses: simple-elf/allure-report-action@master
-        uses: ./allure-report-action2
+        uses: ./allure-report-action
         if: always()
         #id: allure-report
         with:

@@ -46,9 +46,16 @@ inputs:
     required: true
     default: ${{ github.repository_owner }}
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.allure_version }}
-    - --build-arg RELEASE=${{ inputs.allure_version }}
-  entrypoint: '/entrypoint.sh'
+  #using: 'docker'
+  #image: 'Dockerfile'
+  #args:
+  #  - ${{ inputs.allure_version }}
+
+  using: composite
+  steps:
+    - id: docker-build
+      run: docker build . -t docker-action --build-arg RELEASE=${{ inputs.allure_version }}
+      shell: bash
+    - id: docker-run
+      run: docker run --rm -v $(pwd):/github/workspace --workdir /github/workspace docker-action
+      shell: bash
