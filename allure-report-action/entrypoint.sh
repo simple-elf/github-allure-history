@@ -21,8 +21,8 @@ fi
 
 if [[ $(ls ./${INPUT_ALLURE_HISTORY}| wc -l) > ${INPUT_KEEP_REPORTS}+2 ]]; then
   cd ./${INPUT_ALLURE_HISTORY}
-  rm index.html last-history -rdv
-  ls | sort -n | head -n ${INPUT_KEEP_REPORTS} | xargs rm -rdv;
+  rm index.html last-history -rv
+  ls | sort -n | head -n ${INPUT_KEEP_REPORTS} | xargs rm -rv;
   cd ..
 fi
 
