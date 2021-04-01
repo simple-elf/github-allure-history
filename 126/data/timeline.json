@@ -1,0 +1,130 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az186-340",
+    "children" : [ {
+      "name" : "1866@fv-az186-340.ForkJoinPool-1-worker-1(12)",
+      "children" : [ {
+        "name" : "Close new issue for authorized user",
+        "uid" : "401867deb4dd1483",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617310622823,
+          "stop" : 1617310623827,
+          "duration" : 1004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create new issue authorized user",
+        "uid" : "2a5c9d9bda3510f9",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617310621815,
+          "stop" : 1617310622819,
+          "duration" : 1004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Close existing pull request for authorized user",
+        "uid" : "60b8932a9625bfc8",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617310616568,
+          "stop" : 1617310618650,
+          "duration" : 2082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create issue via api",
+        "uid" : "bd6bd5cb5dcd72e3",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617310623862,
+          "stop" : 1617310623881,
+          "duration" : 19
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "Close issue via api",
+        "uid" : "4efaf8bd852bb0b",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617310623906,
+          "stop" : 1617310623910,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "72c27a3c399f4a70",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1617310618758,
+          "stop" : 1617310620774,
+          "duration" : 2016
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create new issue with labels",
+        "uid" : "380b75f4ae50648c",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617310620805,
+          "stop" : 1617310621808,
+          "duration" : 1003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create issue via api",
+        "uid" : "7160753a836accf",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617310623891,
+          "stop" : 1617310623893,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      }, {
+        "name" : "Close issue via api",
+        "uid" : "45256f3fc3806747",
+        "parentUid" : "861783066ab27d19fec18ab5d783a03f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617310623916,
+          "stop" : 1617310623917,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      } ],
+      "uid" : "861783066ab27d19fec18ab5d783a03f"
+    } ],
+    "uid" : "416dcd386ce6213ef43609a4a67633c5"
+  } ],
+  "name" : "timeline"
+}
