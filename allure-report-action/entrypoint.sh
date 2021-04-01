@@ -19,9 +19,9 @@ if [[ ${INPUT_SUBFOLDER} != '' ]]; then
     echo "NEW github pages url ${GITHUB_PAGES_WEBSITE_URL}"
 fi
 
-if [[ $(ls --hide index.html --hide last-history ./${INPUT_ALLURE_HISTORY}| wc -l) > ${INPUT_KEEP_REPORTS} ]]; then
+if [[ $(ls --ignore index.html --ignore last-history ./${INPUT_ALLURE_HISTORY}| wc -l) > ${INPUT_KEEP_REPORTS} ]]; then
   cd ./${INPUT_ALLURE_HISTORY}
-  ls --hide index.html --hide last-history | sort -n | head -n ${INPUT_KEEP_REPORTS} | xargs rm -rdv;
+  ls --ignore index.html --ignore last-history | sort -n | head -n ${INPUT_KEEP_REPORTS} | xargs rm -rdv;
   cd ..
 fi
 
