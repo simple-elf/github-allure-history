@@ -10,6 +10,7 @@ on:
       - '!.gitlab-ci.yml'
       - '!allure-template.yml'
       - '**/allure-history.yml'
+      - 'allure-report-action'
 
 jobs:
   autotests:
