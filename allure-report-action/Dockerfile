@@ -6,7 +6,7 @@ RUN echo $RELEASE
 ARG ALLURE_REPO=https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
 
 #RUN apk update
-#RUN apk add bash
+RUN apk add bash
 #RUN apk add wget
 #RUN apk add unzip
 
