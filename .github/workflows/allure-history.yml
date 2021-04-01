@@ -57,7 +57,7 @@ jobs:
 
       - name: Allure Report action
         #uses: simple-elf/allure-report-action@master
-        uses: ./allure-report-action
+        uses: ./allure-report-action2
         if: always()
         #id: allure-report
         with:
