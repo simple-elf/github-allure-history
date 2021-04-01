@@ -1,4 +1,5 @@
-FROM openjdk:8-jre-alpine
+#FROM openjdk:8-jre-alpine
+FROM ubuntu:latest
 
 ARG RELEASE=2.13.9
 RUN echo $RELEASE
