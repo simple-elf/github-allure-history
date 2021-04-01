@@ -53,6 +53,8 @@ runs:
 
   using: composite
   steps:
+    - run: ls -l
+      shell: bash
     - id: docker-build
       run: docker build . -t docker-action --build-arg RELEASE=${{ inputs.allure_version }}
       shell: bash
