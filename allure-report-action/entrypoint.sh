@@ -19,9 +19,13 @@ if [[ ${INPUT_SUBFOLDER} != '' ]]; then
     echo "NEW github pages url ${GITHUB_PAGES_WEBSITE_URL}"
 fi
 
-if [[ $(ls ./${INPUT_ALLURE_HISTORY}| wc -l) > ${INPUT_KEEP_REPORTS}+2 ]]; then
+echo "count folders in allure-history"
+ls ./${INPUT_ALLURE_HISTORY}| wc -l
+if [[ $(ls ./${INPUT_ALLURE_HISTORY}| wc -l) > ${INPUT_KEEP_REPORTS} ]]; then
   cd ./${INPUT_ALLURE_HISTORY}
+  echo "remove index.html last-history"
   rm index.html last-history -rv
+  echo "remove old reports"
   ls | sort -n | head -n ${INPUT_KEEP_REPORTS} | xargs rm -rv;
   cd ..
 fi
