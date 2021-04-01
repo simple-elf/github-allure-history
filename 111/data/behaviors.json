@@ -1,0 +1,146 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Pull Requests",
+    "children" : [ {
+      "name" : "Close existing pull request",
+      "children" : [ {
+        "name" : "Close existing pull request for authorized user",
+        "uid" : "f7921ea8c53c1abf",
+        "parentUid" : "6526b340b2ea1e62ffc8345ded80efcb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1617299710606,
+          "stop" : 1617299712751,
+          "duration" : 2145
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6526b340b2ea1e62ffc8345ded80efcb"
+    }, {
+      "name" : "Create new pull request",
+      "children" : [ {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "fd15d1ca30dc2dff",
+        "parentUid" : "b6661ad73eea1ac4e56bf2dcb6d79b3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617299712904,
+          "stop" : 1617299714908,
+          "duration" : 2004
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b6661ad73eea1ac4e56bf2dcb6d79b3a"
+    } ],
+    "uid" : "4ff88e937652e6505bfdfba18dfbad48"
+  }, {
+    "name" : "Issues",
+    "children" : [ {
+      "name" : "Create new issue",
+      "children" : [ {
+        "name" : "Create new issue with labels",
+        "uid" : "b0bb5fab82115826",
+        "parentUid" : "25a4a77ff4a0dccdc3b255e2f5190ca4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617299714937,
+          "stop" : 1617299715945,
+          "duration" : 1008
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create new issue authorized user",
+        "uid" : "4fa1fdeff4c8f9d1",
+        "parentUid" : "25a4a77ff4a0dccdc3b255e2f5190ca4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617299715986,
+          "stop" : 1617299716989,
+          "duration" : 1003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create issue via api",
+        "uid" : "b91fada31ea47cc3",
+        "parentUid" : "25a4a77ff4a0dccdc3b255e2f5190ca4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617299718050,
+          "stop" : 1617299718075,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "Create issue via api",
+        "uid" : "4a1268cbe180153f",
+        "parentUid" : "25a4a77ff4a0dccdc3b255e2f5190ca4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617299718086,
+          "stop" : 1617299718093,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      } ],
+      "uid" : "25a4a77ff4a0dccdc3b255e2f5190ca4"
+    }, {
+      "name" : "Close existing issue",
+      "children" : [ {
+        "name" : "Close new issue for authorized user",
+        "uid" : "5c1906b683b1bd12",
+        "parentUid" : "95f688f6b9c59f2d67e1c1eba9025589",
+        "status" : "failed",
+        "time" : {
+          "start" : 1617299716999,
+          "stop" : 1617299718004,
+          "duration" : 1005
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Close issue via api",
+        "uid" : "1bdb98e6d74bf7ef",
+        "parentUid" : "95f688f6b9c59f2d67e1c1eba9025589",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617299718103,
+          "stop" : 1617299718104,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "First Note" ]
+      }, {
+        "name" : "Close issue via api",
+        "uid" : "bfc203de9b65e3a5",
+        "parentUid" : "95f688f6b9c59f2d67e1c1eba9025589",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617299718110,
+          "stop" : 1617299718113,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+      } ],
+      "uid" : "95f688f6b9c59f2d67e1c1eba9025589"
+    } ],
+    "uid" : "b464cd6d73cbced255dc95dc73974120"
+  } ],
+  "name" : "behaviors"
+}
