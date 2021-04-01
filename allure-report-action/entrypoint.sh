@@ -13,6 +13,7 @@ GITHUB_PAGES_WEBSITE_URL="https://${INPUT_GITHUB_REPO_OWNER}.github.io/${REPOSIT
 
 if [[ ${INPUT_SUBFOLDER} != '' ]]; then
     INPUT_ALLURE_HISTORY="${INPUT_ALLURE_HISTORY}/${INPUT_SUBFOLDER}"
+    INPUT_GH_PAGES="${INPUT_GH_PAGES}/${INPUT_SUBFOLDER}"
     echo "NEW allure history folder ${INPUT_ALLURE_HISTORY}"
     mkdir -p ./${INPUT_ALLURE_HISTORY}
     GITHUB_PAGES_WEBSITE_URL="${GITHUB_PAGES_WEBSITE_URL}/${INPUT_SUBFOLDER}"
@@ -21,12 +22,14 @@ fi
 
 echo "count folders in allure-history"
 ls ./${INPUT_ALLURE_HISTORY}| wc -l
-if [[ $(ls ./${INPUT_ALLURE_HISTORY}| wc -l) > ${INPUT_KEEP_REPORTS} ]]; then
+echo "keep reports count"
+echo ${INPUT_KEEP_REPORTS}
+if [[ $(ls ./${INPUT_ALLURE_HISTORY}| wc -l) > $((${INPUT_KEEP_REPORTS}+2)) ]]; then
   cd ./${INPUT_ALLURE_HISTORY}
   echo "remove index.html last-history"
   rm index.html last-history -rv
   echo "remove old reports"
-  ls | sort -n | head -n ${INPUT_KEEP_REPORTS} | xargs rm -rv;
+  ls | sort -n | head -n $((${INPUT_KEEP_REPORTS}+0)) | xargs rm -rv;
   cd ..
 fi
 
