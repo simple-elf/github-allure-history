@@ -49,6 +49,9 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
+      - name: Keep X last reports
+        run: if [[ $(ls --hide index.html --hide last-history | wc -l) > 19 ]]; then ls --hide index.html --hide last-history | sort -n | head -n -19 | xargs rm -rdv; fi
+
       - name: Allure Report action
         #uses: simple-elf/allure-report-action@master
         uses: ./allure-report-action
