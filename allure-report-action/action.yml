@@ -1,5 +1,6 @@
 name: 'Allure Report with history'
 description: 'Generate Allure Report with history'
+author: 'simple-elf'
 branding:
   icon: 'layout'
   color: 'green'
@@ -15,7 +16,7 @@ inputs:
   allure_version:
     description: 'Allure commandline version'
     required: true
-    default: '2.13.4'
+    default: '2.13.9'
   gh_pages:
     description: 'Folder with gh-pages branch'
     required: true
@@ -47,7 +48,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  #args:
-  #  - --build-arg RELEASE=${{ inputs.allure_version }}
-  #  - ${{ inputs.results-dir }}
-  #  - ${{ inputs.report-dir }}
+  args:
+    - RELEASE=${{ inputs.allure_version }}
+  entrypoint: 'entrypoint.sh'
