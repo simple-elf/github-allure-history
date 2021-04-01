@@ -10,8 +10,8 @@ ARG ALLURE_REPO=https://repo.maven.apache.org/maven2/io/qameta/allure/allure-com
 #RUN apk add wget
 #RUN apk add unzip
 
-RUN wget --no-verbose -O /tmp/allure-$RELEASE.zip $ALLURE_REPO/$RELEASE/allure-commandline-$RELEASE.tgs \
-  && tar -xf /tmp/allure-$RELEASE.tgs \
+RUN wget --no-verbose -O /tmp/allure-$RELEASE.zip $ALLURE_REPO/$RELEASE/allure-commandline-$RELEASE.tgz \
+  && tar -xf /tmp/allure-$RELEASE.tgz \
   && rm -rf /tmp/*
 
 #RUN rm -rf /var/cache/apk/*
