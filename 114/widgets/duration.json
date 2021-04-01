@@ -1,0 +1,91 @@
+[ {
+  "uid" : "f986bacc9410d419",
+  "name" : "Create new issue with labels",
+  "time" : {
+    "start" : 1617302925555,
+    "stop" : 1617302926560,
+    "duration" : 1005
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f078cb88a48f882",
+  "name" : "Create new pull request for authorized user",
+  "time" : {
+    "start" : 1617302923535,
+    "stop" : 1617302925539,
+    "duration" : 2004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85e1098e4b594e8a",
+  "name" : "Close issue via api",
+  "time" : {
+    "start" : 1617302928736,
+    "stop" : 1617302928737,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1046075a5f7382b",
+  "name" : "Close existing pull request for authorized user",
+  "time" : {
+    "start" : 1617302921287,
+    "stop" : 1617302923418,
+    "duration" : 2131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1593a09d842634a4",
+  "name" : "Create new issue authorized user",
+  "time" : {
+    "start" : 1617302926582,
+    "stop" : 1617302927587,
+    "duration" : 1005
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b589684e2c1121a",
+  "name" : "Close new issue for authorized user",
+  "time" : {
+    "start" : 1617302927596,
+    "stop" : 1617302928606,
+    "duration" : 1010
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4ec8a40e5392063a",
+  "name" : "Create issue via api",
+  "time" : {
+    "start" : 1617302928661,
+    "stop" : 1617302928717,
+    "duration" : 56
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca5c829cd5753846",
+  "name" : "Close issue via api",
+  "time" : {
+    "start" : 1617302928743,
+    "stop" : 1617302928745,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb1c358762a953fc",
+  "name" : "Create issue via api",
+  "time" : {
+    "start" : 1617302928723,
+    "stop" : 1617302928724,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
