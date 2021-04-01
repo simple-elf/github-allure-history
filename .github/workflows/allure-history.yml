@@ -45,7 +45,7 @@ jobs:
         if: always()
         continue-on-error: true
         with:
-          ref: gh-pages2
+          ref: gh-pages
           path: gh-pages
 
       - name: Keep last 20 reports
@@ -70,5 +70,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages2
+          PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
