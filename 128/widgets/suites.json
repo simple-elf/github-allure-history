@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "9abb0b65d6e1c29fb87e21627327003e",
+    "name" : "io.qameta.allure.examples.junit5.PullRequestsWebTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "75981d2a3e281754d421f3cf32f9811d",
+    "name" : "io.qameta.allure.examples.junit5.IssuesRestTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "642ed6285fff00a31ace816c4e1a7820",
+    "name" : "io.qameta.allure.examples.junit5.IssuesWebTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  } ]
+}

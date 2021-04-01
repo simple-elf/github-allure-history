@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Selenium timeout: selenium unavailable now",
+      "children" : [ {
+        "name" : "Close existing pull request for authorized user",
+        "uid" : "fab46a177d220352",
+        "parentUid" : "340e656f34185d11d723ba37ac19a21b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1617311876120,
+          "stop" : 1617311876214,
+          "duration" : 94
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Create new pull request for authorized user",
+        "uid" : "6f2b91af95b7a873",
+        "parentUid" : "340e656f34185d11d723ba37ac19a21b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1617311876395,
+          "stop" : 1617311876397,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "340e656f34185d11d723ba37ac19a21b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
