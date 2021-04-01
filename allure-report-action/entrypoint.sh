@@ -19,6 +19,12 @@ if [[ ${INPUT_SUBFOLDER} != '' ]]; then
     echo "NEW github pages url ${GITHUB_PAGES_WEBSITE_URL}"
 fi
 
+if [[ $(ls --hide index.html --hide last-history ./${INPUT_ALLURE_HISTORY}| wc -l) > ${INPUT_KEEP_REPORTS} ]]; then
+  cd ./${INPUT_ALLURE_HISTORY}
+  ls --hide index.html --hide last-history | sort -n | head -n ${INPUT_KEEP_REPORTS} | xargs rm -rdv;
+  cd ..
+fi
+
 #echo "index.html"
 echo "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=${GITHUB_PAGES_WEBSITE_URL}/${INPUT_GITHUB_RUN_NUM}/\">" > ./${INPUT_ALLURE_HISTORY}/index.html # path
 echo "<meta http-equiv=\"Pragma\" content=\"no-cache\"><meta http-equiv=\"Expires\" content=\"0\">" >> ./${INPUT_ALLURE_HISTORY}/index.html
@@ -39,8 +45,6 @@ mv ./environment.properties ./${INPUT_ALLURE_RESULTS}
 
 echo "keep allure history from ${INPUT_ALLURE_HISTORY}/last-history to ${INPUT_ALLURE_RESULTS}/history"
 cp -r ./${INPUT_ALLURE_HISTORY}/last-history/. ./${INPUT_ALLURE_RESULTS}/history
-
-#echo "version ${INPUT_ALLURE_VERSION}"
 
 echo "generating report from ${INPUT_ALLURE_RESULTS} to ${INPUT_ALLURE_REPORT} ..."
 #ls -l ${INPUT_ALLURE_RESULTS}

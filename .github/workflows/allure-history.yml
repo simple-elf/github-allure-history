@@ -1,8 +1,8 @@
 name: Allure Reports with history
 
 on:
-  #schedule:
-  #  - cron: '*/10 * * * *'
+  schedule:
+    - cron: '*/5 * * * *' # every 5 minutes
   push:
     branches-ignore:
       - '!master' # ignore gh-pages
@@ -48,12 +48,6 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
-
-      #- name: Keep last 20 reports
-      #  run: |
-      #    sudo chown -R $USER:$USER gh-pages
-      #    cd gh-pages
-      #    ls | head -n -21 | xargs rm -rd
 
       - name: Allure Report action
         #uses: simple-elf/allure-report-action@master

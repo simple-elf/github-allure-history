@@ -13,10 +13,6 @@ inputs:
     description: 'Allure report target dir'
     required: true
     default: 'allure-report'
-  allure_version:
-    description: 'Allure commandline version'
-    required: true
-    default: '2.13.9'
   gh_pages:
     description: 'Folder with gh-pages branch'
     required: true
@@ -29,6 +25,10 @@ inputs:
     description: 'subfolder'
     required: false
     default: ''
+  keep_reports:
+    description: 'Keep X last reports'
+    required: false
+    default: '20'
   github_run_num:
     description: 'GitHub Actions build number'
     required: true
@@ -46,16 +46,5 @@ inputs:
     required: true
     default: ${{ github.repository_owner }}
 runs:
-  #using: 'docker'
-  #image: 'Dockerfile'
-  #args:
-  #  - ${{ inputs.allure_version }}
-
-  using: composite
-  steps:
-    - id: docker-build
-      run: cd allure-report-action && docker build --build-arg RELEASE=${{ inputs.allure_version }} -t docker-action .
-      shell: bash
-    - id: docker-run
-      run: docker run --rm -v $(pwd):/github/workspace --workdir /github/workspace docker-action
-      shell: bash
+  using: 'docker'
+  image: 'Dockerfile'
