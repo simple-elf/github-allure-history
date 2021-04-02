@@ -1,0 +1,134 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "io.qameta.allure.examples.junit5.PullRequestsWebTest",
+    "children" : [ {
+      "name" : "Close existing pull request for authorized user",
+      "uid" : "bf6101b4d1aecb7e",
+      "parentUid" : "9abb0b65d6e1c29fb87e21627327003e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1617356401817,
+        "stop" : 1617356403935,
+        "duration" : 2118
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new pull request for authorized user",
+      "uid" : "feba5343b26dfd4",
+      "parentUid" : "9abb0b65d6e1c29fb87e21627327003e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1617356404090,
+        "stop" : 1617356406101,
+        "duration" : 2011
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9abb0b65d6e1c29fb87e21627327003e"
+  }, {
+    "name" : "io.qameta.allure.examples.junit5.IssuesWebTest",
+    "children" : [ {
+      "name" : "Create new issue with labels",
+      "uid" : "cf5cc0fdfecadc5b",
+      "parentUid" : "642ed6285fff00a31ace816c4e1a7820",
+      "status" : "failed",
+      "time" : {
+        "start" : 1617356406127,
+        "stop" : 1617356407144,
+        "duration" : 1017
+      },
+      "flaky" : true,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Create new issue authorized user",
+      "uid" : "85d7841097328c15",
+      "parentUid" : "642ed6285fff00a31ace816c4e1a7820",
+      "status" : "passed",
+      "time" : {
+        "start" : 1617356407168,
+        "stop" : 1617356408171,
+        "duration" : 1003
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Close new issue for authorized user",
+      "uid" : "7e35096fa0e2c504",
+      "parentUid" : "642ed6285fff00a31ace816c4e1a7820",
+      "status" : "failed",
+      "time" : {
+        "start" : 1617356408186,
+        "stop" : 1617356409194,
+        "duration" : 1008
+      },
+      "flaky" : true,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "642ed6285fff00a31ace816c4e1a7820"
+  }, {
+    "name" : "io.qameta.allure.examples.junit5.IssuesRestTest",
+    "children" : [ {
+      "name" : "Create issue via api",
+      "uid" : "ce1c12de04bbcec5",
+      "parentUid" : "75981d2a3e281754d421f3cf32f9811d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1617356409242,
+        "stop" : 1617356409259,
+        "duration" : 17
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "allure-framework", "allure2", "First Note" ]
+    }, {
+      "name" : "Create issue via api",
+      "uid" : "13292e3383d82c15",
+      "parentUid" : "75981d2a3e281754d421f3cf32f9811d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1617356409264,
+        "stop" : 1617356409265,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+    }, {
+      "name" : "Close issue via api",
+      "uid" : "a49a9bdc8bf148ad",
+      "parentUid" : "75981d2a3e281754d421f3cf32f9811d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1617356409270,
+        "stop" : 1617356409271,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "allure-framework", "allure2", "First Note" ]
+    }, {
+      "name" : "Close issue via api",
+      "uid" : "ca6e13f87dc58f0d",
+      "parentUid" : "75981d2a3e281754d421f3cf32f9811d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1617356409276,
+        "stop" : 1617356409277,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "allure-framework", "allure2", "Second Note" ]
+    } ],
+    "uid" : "75981d2a3e281754d421f3cf32f9811d"
+  } ],
+  "name" : "suites"
+}

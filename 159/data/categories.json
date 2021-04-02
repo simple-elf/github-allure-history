@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected: <Some issue title here> but was: <another text>",
+      "children" : [ {
+        "name" : "Create new issue with labels",
+        "uid" : "cf5cc0fdfecadc5b",
+        "parentUid" : "760fe81b3ba66ec84ca2cefe6e5ad991",
+        "status" : "failed",
+        "time" : {
+          "start" : 1617356406127,
+          "stop" : 1617356407144,
+          "duration" : 1017
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Close new issue for authorized user",
+        "uid" : "7e35096fa0e2c504",
+        "parentUid" : "760fe81b3ba66ec84ca2cefe6e5ad991",
+        "status" : "failed",
+        "time" : {
+          "start" : 1617356408186,
+          "stop" : 1617356409194,
+          "duration" : 1008
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "760fe81b3ba66ec84ca2cefe6e5ad991"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
