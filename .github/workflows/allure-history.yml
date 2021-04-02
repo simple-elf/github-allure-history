@@ -50,8 +50,8 @@ jobs:
           path: gh-pages
 
       - name: Allure Report action
-        #uses: simple-elf/allure-report-action@master
-        uses: ./allure-report-action
+        uses: simple-elf/allure-report-action@master
+        #uses: ./allure-report-action
         if: always()
         #id: allure-report
         with:
