@@ -28,7 +28,7 @@ if [[ $((INPUT_KEEP_REPORTS+2)) < $( ( ls ./${INPUT_ALLURE_HISTORY} | wc -l ) ) 
   echo "remove index.html last-history"
   rm index.html last-history -rv
   echo "remove old reports"
-  ls | sort -n | head -n -$((${INPUT_KEEP_REPORTS}+0)) | xargs rm -rv;
+  ls | sort -n | head -n -$((${INPUT_KEEP_REPORTS}-1)) | xargs rm -rv;
   cd ..
 fi
 
