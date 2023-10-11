@@ -8,6 +8,7 @@ allure-history:
     - chmod -R 777 public
     - cp -r ./public/history ./build/allure-results
     - echo '{"name":"GitLab CI","type":"gitlab"}' > ./build/allure-results/executor.json
+    - echo "URL=${CI_PAGES_URL}" > ./build/allure-results/environment.properties
   allow_failure: true
   artifacts:
     paths:

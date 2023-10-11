@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static io.qameta.allure.Allure.parameter;
 
 @Layer("rest")
-@Owner("baev")
+@Owner("baev2")
 @Feature("Issues")
 @UrlPath("/repos/{owner}/{repo}/issues")
 public class IssuesRestTest {
